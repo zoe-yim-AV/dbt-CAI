@@ -1,0 +1,9 @@
+models:
+  - name: fact_conversions
+    description: Campaign conversions data mart, offering key details for each unique campaign. One row per campaign.
+    columns:
+      - name: campaign_id
+        description: The unique key of the campaign.
+        data_tests:
+          - not_null
+          ##- unique

@@ -1,0 +1,14 @@
+models:
+  - name: stg_lookup
+    description: Customer data with basic cleaning and transformation applied, one row per customer.
+    columns:
+      - name: CAMPAIGNID
+        description: The unique key for each campaign.
+        data_tests:
+          - not_null
+          - unique
+      - name: SENDID
+        description: The unique key for each send.
+        data_tests:
+          - not_null
+          - uniques

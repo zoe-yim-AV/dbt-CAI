@@ -1,0 +1,28 @@
+==================== 2026-09-23T14:22:41.592635Z | 01a0cea5-b5b6-7b93-bca3-70fbfa00548c ====================
+14:22:41.725701 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [133ms]
+==================== 2026-09-28T19:48:13.458938Z | 01a0e98f-8a11-7061-beb3-de16031269c3 ====================
+19:48:13.460599 [info ]: dbt 2.0.6
+19:48:13.462507 [info ]: Started loading project
+19:48:13.470903 [info ]: Loading profiles.yml
+19:48:13.471738 [info ]: Finished loading project [  0.01s]
+19:48:13.472169 [error]: [IoError (dbt1001)]: Profile 'CAI_email_engagement' not found in profiles.yml
+  --> dbt_project.yml:3:10
+19:48:13.627910 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' with 1 error [168ms]
+==================== 2026-09-28T19:48:20.056228Z | 01a0e98f-a3d7-7920-816b-e01d7c2cad5a ====================
+19:48:20.056294 [info ]: dbt 2.0.6
+19:48:20.177947 [info ]: Loading packages.yml
+19:48:20.177997 [info ]: Installing packages
+19:48:20.201830 [info ]: Installing dbt-labs/dbt_utils
+19:48:21.195931 [info ]:  Installed dbt-labs/dbt_utils: 1.4.1
+19:48:21.196091 [info ]:  Installed 1 package
+19:48:21.354887 [info ]: 
+==================== Execution Summary =====================
+Finished 'deps' successfully [1.3s]
+==================== 2026-10-01T13:58:55.508315Z | 01a0f7c2-d312-76e2-9638-8b212b1f92e1 ====================
+13:58:55.604295 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [95ms]

@@ -1,0 +1,40 @@
+==================== 2026-09-23T14:21:26.443304Z | 01a0cea4-901e-7b10-aa56-50f7ee1bcb4d ====================
+14:21:26.445892 [info ]: Installing dbt project and profile setup
+14:21:26.451909 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+14:21:26.453561 [info ]: Success Project created successfully!
+14:21:26.453688 [info ]: Info Project name: jaffle_shop
+14:21:26.453700 [info ]: Info Project directory: jaffle_shop
+14:21:41.908779 [info ]: Info Using existing profile 'jaffle_shop'
+14:21:41.909335 [info ]: Success Set profile 'jaffle_shop' in dbt_project.yml
+14:21:41.909368 [info ]: Validating profile inputs, adapters, and connection
+
+14:21:41.910121 [info ]: dbt 2.0.6
+14:21:41.913483 [info ]: Started loading project
+14:21:41.930788 [info ]: Loading ~/.dbt/profiles.yml
+14:21:41.938225 [info ]: Finished loading project [  0.02s]
+14:21:41.940334 [info ]: Started debugging
+14:21:41.940990 [info ]: Debugging profile: dev
+14:21:41.941005 [info ]: Debugging dbt version: 2.0.6
+14:21:41.941179 [info ]: Debugging platform: macos aarch64 (unix)
+14:21:41.941488 [info ]: Debugging adapter type: snowflake (remote)
+14:21:41.963515 [info ]: Debugging dependencies:
+  git: OK
+14:21:41.965043 [info ]: Debugging connection:
+  "authenticator": "username_password_mfa",
+  "account": "<Snowflake account identifier>",
+  "user": "ZYIM",
+  "database": "CA_MKTG_OPS_NP",
+  "warehouse": "<YOUR_DEV_WAREHOUSE>",
+  "schema": "<YOUR_DBT_DEV_ROLE>"
+14:21:41.971887 [info ]: Debugging connection test: ERROR
+14:21:41.972365 [info ]: Finished debugging [  0.03s]
+14:21:41.973092 [error]: [AuthenticationFailed (dbt1011)]: dbt was unable to connect to the database configured for the `snowflake` adapter.
+The following error was returned:
+
+Configuration Error: Snowflake warehouse authentication requires 'password'.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+14:21:42.288466 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [15.8s]

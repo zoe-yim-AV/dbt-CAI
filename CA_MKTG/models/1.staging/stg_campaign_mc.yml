@@ -1,0 +1,9 @@
+models:
+  - name: mc_man_open_base
+    description: 
+    columns:
+      - name: CAMPAIGNID
+        description: The unique key for each campaign.
+        data_tests:
+          - not_null
+          - unique

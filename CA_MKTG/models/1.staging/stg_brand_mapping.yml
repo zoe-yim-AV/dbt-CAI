@@ -1,0 +1,9 @@
+models:
+  - name: stg_brand_mapping
+    description: List of open locations with basic cleaning and transformation applied, one row per location.
+    columns:
+      - name: MID
+        description: The unique key for each location.
+        data_tests:
+          - not_null
+          - unique

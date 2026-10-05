@@ -1,0 +1,9 @@
+models:
+  - name: stg_man_opens_base
+    description: Individual food and drink items that make up our orders, one row per item.
+    columns:
+      - name: SENDID
+        description: 
+        data_tests:
+          - not_null
+          - unique
